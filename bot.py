@@ -51,7 +51,7 @@ class ValorantBot(commands.Bot):
         print(f"Version: {self.bot_version}")
 
         # bot presence
-        activity_type = discord.ActivityType.game
+        activity_type = discord.ActivityType.Game
         await self.change_presence(activity=discord.Activity(type=activity_type, name="DiabolicGames"))
               
     async def setup_hook(self) -> None:
